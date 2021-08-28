@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+
+}
+
+body {
+  background-image: url("background.gif");
+}
+
+.navbar {
+
+  width: 100%;
+  height: 70px;
+  background-color: white;
+
+}
+
+.navbar img {
+  float: left;
+  width: 130px;
+  height: 70px;
+  padding: 10px;
+  background-color: white;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.flex-item-left {
+  background-color: rgb(236, 208, 49);
+  background-color: transparent;
+  padding: 10px;
+  height: 400px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color: darkorange;
+  background-color: transparent;
+  padding: 10px;
+  flex: 50%;
+  height: 400px;
+}
+
+#formContainer {
+  margin-top: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 10px;
+  width: 80%;
+  height: 300px;
+  background-color: darkred;
+}
+
+#formContainer h1 {
+  margin: auto;
+  color: white;
+  width: 80%;
+  background-color: transparent;
+}
+
+input {
+  width: 180px;
+  height: 20px;
+  background-color: white;
+  border-color: transparent;
+  border-style: solid;
+
+}
+
+form {
+  background-color: transparent;
+
+}
+
+#formBody {
+  margin-top: 20px;
+}
+
+#submitButton {
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  border-color: white;
+  border-style: solid;
+  width: 100px;
+  margin-top: 15px;
+  height: 40px;
+}
+
+#slideContainer {
+  width: 80%;
+  height: 300px;
+  padding: 0;
+  margin: auto;
+  margin-top: 30px;
+  background-color: black;
+}
+
+#slide1 {
+  width: 100%;
+  height: 300px;
+  padding: 0;
+}
+
+#slide2 {
+  width: 100%;
+  height: 300px;
+  padding: 0;
+  display: none;
+}
+
+#slide3 {
+  width: 100%;
+  height: 300px;
+  padding: 0;
+  display: none;
+}
+
+#sliderSubmit {
+  background-color: black;
+  color: white;
+  border-color: white;
+  border-style: solid;
+  border-radius: 25px;
+  width: 150px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  #formContainer h1 {
+    margin: auto;
+    color: white;
+    width: 80%;
+    font-size: 45px;
+    background-color: transparent;
+  }
+}
